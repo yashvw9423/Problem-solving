@@ -1,19 +1,19 @@
 public class Prime {
     public static void main(String[] args) {
-        int num = 5;
+        int num = 97;
         int count = 0;
-        for (int i=2; i<num; i++) {
+        for (int i=2; i<Math.sqrt(num); i++) {
             if(num%i==0){
                 count++;
             }
         }
 
         if(num<2){
-            System.out.println("Number is not prime");
+            System.out.println(num + " is not prime Number");
         }else if(count == 0) {
-            System.out.println("Number is prime");
+            System.out.println(num + " is prime Number");
         }else{
-            System.out.println("Number is not prime");
+            System.out.println(num + " is not prime Number");
         }
     }    
 }
